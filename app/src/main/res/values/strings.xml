@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TODOList</string>
+    <string name="fragment_login_title">Sign In</string>
+    
+    <string name="fragment_login_text_input_name_hint">Login</string>
+    <string name="fragment_login_text_input_name_error_empty">No login</string>
+    <string name="fragment_login_text_input_password_hint">Password</string>
+    <string name="fragment_login_text_input_password_error_empty">No password</string>
+    <string name="fragment_login_action_sign_in_text">Log In</string>
+
+    <string name="fragment_all_tasks_title">TODO List</string>
+    <string name="fragment_all_tasks_header_done">Done</string>
+    <string name="fragment_all_tasks_header_new">New</string>
+    <string name="fragment_all_tasks_option_menu_item_show_title">Show</string>
+    <string name="fragment_all_tasks_option_menu_item_delete_title">Delete</string>
+    <string name="fragment_all_tasks_toolbar_menu_item_logout">Logout</string>
+
+    <string name="fragment_task_detailed_title">Detail</string>
+    <string name="fragment_task_detailed_option_more_title">More</string>
+    <string name="fragment_task_detailed_option_save_title">Save</string>
+    <string name="fragment_task_detailed_content_description_back">Back</string>
+
+    <string name="fragment_task_detailed_message_error_save">Failed to save changes</string>
+
+    <string name="fragment_task_detailed_input_name_hint">Name</string>
+    <string name="fragment_task_detailed_input_name_error_empty">The name must not be empty</string>
+    <string name="fragment_task_detailed_input_description_hint">Description</string>
+    <string name="fragment_task_detailed_image_description">Image</string>
+
+    <string name="fragment_task_detailed_options_action_image_change_text">Change Image</string>
+    <string name="fragment_task_detailed_options_action_image_remove_text">Remove Image</string>
+    <string name="fragment_task_detailed_options_action_delete_text">Delete</string>
+
+</resources>

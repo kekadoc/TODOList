@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/destination_login">
+
+    <fragment
+        android:id="@+id/destination_login"
+        android:name="com.kekadoc.test.todolist.ui.login.LoginFragment"
+        android:label="@string/fragment_login_title"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_menu_item_remove_image_to_destination_all_tasks"
+            app:destination="@id/destination_all_tasks" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_all_tasks"
+        android:name="com.kekadoc.test.todolist.ui.tasks.AllTaskFragment"
+        android:label="@string/fragment_all_tasks_title"
+        tools:layout="@layout/fragment_all_tasks" >
+        <action
+            android:id="@+id/action_destination_all_tasks_to_destination_task_detailed"
+            app:destination="@id/destination_task_detailed" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/destination_task_detailed"
+        android:name="com.kekadoc.test.todolist.ui.task.TaskDetailedFragment"
+        android:label="@string/fragment_task_detailed_title"
+        tools:layout="@layout/fragment_task_detailed" >
+        <action
+            android:id="@+id/action_destination_task_detailed_to_taskOptionsDialogFragment"
+            app:destination="@id/destination_task_options" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/destination_task_options"
+        android:name="com.kekadoc.test.todolist.ui.task.TaskOptionsDialogFragment"
+        android:label="fragment_task_options_dialog"
+        tools:layout="@layout/fragment_task_options_dialog" />
+
+</navigation>
